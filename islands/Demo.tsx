@@ -1,3 +1,4 @@
+import { ExpandMore as ExpandMoreIcon } from "@mui/icons-material";
 import {
   Accordion,
   AccordionDetails,
@@ -5,8 +6,7 @@ import {
   Box,
   Container,
   Typography,
-} from "https://esm.sh/@mui/material?alias=react:preact/compat,react/jsx-runtime:preact/compat/jsx-runtime&deps=preact@10.11.0";
-import ExpandMoreIcon from "https://esm.sh/@mui/icons-material/ExpandMore?alias=react:preact/compat,react/jsx-runtime:preact/compat/jsx-runtime&deps=preact@10.11.0";
+} from "@mui/material";
 
 export default function Demo() {
   return (
