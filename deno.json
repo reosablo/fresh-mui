@@ -2,9 +2,46 @@
   "tasks": {
     "start": "deno run -A --watch=static/,routes/ dev.ts"
   },
-  "importMap": "./import_map.json",
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
+  },
+  "imports": {
+    "$fresh/": "https://deno.land/x/fresh@1.2.0/",
+    "preact": "https://esm.sh/preact@10.15.1",
+    "preact/": "https://esm.sh/preact@10.15.1/",
+    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.1.0",
+    "@preact/signals": "https://esm.sh/*@preact/signals@1.1.3",
+    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.2.3",
+    "@emotion/cache": "./shims/emotion-cache.ts",
+    "@emotion/react": "./shims/emotion-react.ts",
+    "@emotion/styled": "./shims/emotion-styled.ts",
+    "@emotion/use-insertion-effect-with-fallbacks": "./shims/emotion-use-insertion-effect-with-fallbacks.ts",
+    "@emotion/utils": "./shims/emotion-utils.ts",
+    "@mui/icons-material": "https://esm.sh/v106/@mui/icons-material@5.11.0?alias=react:preact/compat,react/jsx-runtime:preact/compat/jsx-runtime,@types/react:preact/compat,react-dom:preact/compat&external=preact/compat,@emotion/cache,@emotion/react,@emotion/styled",
+    "@mui/material": "https://esm.sh/v106/@mui/material@5.11.7?alias=react:preact/compat,react/jsx-runtime:preact/compat/jsx-runtime,@types/react:preact/compat,react-dom:preact/compat&external=preact/compat,@emotion/cache,@emotion/react,@emotion/styled",
+    "@mui/x-data-grid": "https://esm.sh/v106/@mui/x-data-grid@5.17.22?alias=react:preact/compat,react/jsx-runtime:preact/compat/jsx-runtime,@types/react:preact/compat,react-dom:preact/compat&external=preact/compat,@emotion/cache,@emotion/react,@emotion/styled"
+  },
+  "scopes": {
+    "./shims/emotion-cache.ts": {
+      "@emotion/cache.browser": "https://esm.sh/v106/@emotion/cache@11.10.5/dist/emotion-cache.browser.esm.js?external=@emotion/utils",
+      "@emotion/cache.worker": "https://esm.sh/v106/@emotion/cache@11.10.5/dist/emotion-cache.worker.esm.js?external=@emotion/utils"
+    },
+    "./shims/emotion-react.ts": {
+      "@emotion/react.browser": "https://esm.sh/v106/@emotion/react@11.10.5/dist/emotion-react.browser.esm.js?alias=react:preact/compat&external=preact/compat,@emotion/cache,@emotion/use-insertion-effect-with-fallbacks,@emotion/utils",
+      "@emotion/react.worker": "https://esm.sh/v106/@emotion/react@11.10.5/dist/emotion-react.worker.esm.js?alias=react:preact/compat&external=preact/compat,@emotion/cache,@emotion/use-insertion-effect-with-fallbacks,@emotion/utils"
+    },
+    "./shims/emotion-styled.ts": {
+      "@emotion/styled.browser": "https://esm.sh/v106/@emotion/styled@11.10.5/dist/emotion-styled.browser.esm.js?alias=react:preact/compat&external=preact/compat,@emotion/react,@emotion/use-insertion-effect-with-fallbacks,@emotion/utils",
+      "@emotion/styled.worker": "https://esm.sh/v106/@emotion/styled@11.10.5/dist/emotion-styled.worker.esm.js?alias=react:preact/compat&external=preact/compat,@emotion/react,@emotion/use-insertion-effect-with-fallbacks,@emotion/utils"
+    },
+    "./shims/emotion-use-insertion-effect-with-fallbacks.ts": {
+      "@emotion/use-insertion-effect-with-fallbacks.browser": "https://esm.sh/v106/@emotion/use-insertion-effect-with-fallbacks@1.0.0/dist/emotion-use-insertion-effect-with-fallbacks.browser.esm.js?alias=react:preact/compat&external=preact/compat",
+      "@emotion/use-insertion-effect-with-fallbacks.worker": "https://esm.sh/v106/@emotion/use-insertion-effect-with-fallbacks@1.0.0/dist/emotion-use-insertion-effect-with-fallbacks.worker.esm.js?alias=react:preact/compat&external=preact/compat"
+    },
+    "./shims/emotion-utils.ts": {
+      "@emotion/utils.browser": "https://esm.sh/v106/@emotion/utils@1.2.0/dist/emotion-utils.browser.esm.js",
+      "@emotion/utils.worker": "https://esm.sh/v106/@emotion/utils@1.2.0/dist/emotion-utils.worker.esm.js"
+    }
   }
 }
