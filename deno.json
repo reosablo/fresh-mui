@@ -13,35 +13,13 @@
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.1.0",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.1.3",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.2.3",
-    "@emotion/cache": "./shims/emotion-cache.ts",
-    "@emotion/react": "./shims/emotion-react.ts",
-    "@emotion/styled": "./shims/emotion-styled.ts",
-    "@emotion/use-insertion-effect-with-fallbacks": "./shims/emotion-use-insertion-effect-with-fallbacks.ts",
-    "@emotion/utils": "./shims/emotion-utils.ts",
-    "@mui/icons-material": "https://esm.sh/v128/@mui/icons-material@5.11.0?alias=react:preact/compat,@types/react:preact/compat,react-dom:preact/compat&external=preact/compat,@emotion/cache,@emotion/react,@emotion/styled",
-    "@mui/material": "https://esm.sh/v128/@mui/material@5.11.7?alias=react:preact/compat,@types/react:preact/compat,react-dom:preact/compat&external=preact/compat,@emotion/cache,@emotion/react,@emotion/styled",
-    "@mui/x-data-grid": "https://esm.sh/v128/@mui/x-data-grid@5.17.22?alias=react:preact/compat,@types/react:preact/compat,react-dom:preact/compat&external=preact/compat,@emotion/cache,@emotion/react,@emotion/styled"
-  },
-  "scopes": {
-    "./shims/emotion-cache.ts": {
-      "@emotion/cache.browser": "https://esm.sh/v128/@emotion/cache@11.10.5?conditions=browser&external=@emotion/utils",
-      "@emotion/cache.worker": "https://esm.sh/v128/@emotion/cache@11.10.5?conditions=worker&external=@emotion/utils"
-    },
-    "./shims/emotion-react.ts": {
-      "@emotion/react.browser": "https://esm.sh/v128/@emotion/react@11.10.5?conditions=browser&alias=react:preact/compat&external=preact/compat,@emotion/cache,@emotion/use-insertion-effect-with-fallbacks,@emotion/utils",
-      "@emotion/react.worker": "https://esm.sh/v128/@emotion/react@11.10.5?conditions=worker&alias=react:preact/compat&external=preact/compat,@emotion/cache,@emotion/use-insertion-effect-with-fallbacks,@emotion/utils"
-    },
-    "./shims/emotion-styled.ts": {
-      "@emotion/styled.browser": "https://esm.sh/v128/@emotion/styled@11.10.5?conditions=browser&alias=react:preact/compat&external=preact/compat,@emotion/react,@emotion/use-insertion-effect-with-fallbacks,@emotion/utils",
-      "@emotion/styled.worker": "https://esm.sh/v128/@emotion/styled@11.10.5?conditions=worker&alias=react:preact/compat&external=preact/compat,@emotion/react,@emotion/use-insertion-effect-with-fallbacks,@emotion/utils"
-    },
-    "./shims/emotion-use-insertion-effect-with-fallbacks.ts": {
-      "@emotion/use-insertion-effect-with-fallbacks.browser": "https://esm.sh/v128/@emotion/use-insertion-effect-with-fallbacks@1.0.0?conditions=browser&alias=react:preact/compat&external=preact/compat",
-      "@emotion/use-insertion-effect-with-fallbacks.worker": "https://esm.sh/v128/@emotion/use-insertion-effect-with-fallbacks@1.0.0?conditions=worker&alias=react:preact/compat&external=preact/compat"
-    },
-    "./shims/emotion-utils.ts": {
-      "@emotion/utils.browser": "https://esm.sh/v128/@emotion/utils@1.2.0?conditions=browser",
-      "@emotion/utils.worker": "https://esm.sh/v128/@emotion/utils@1.2.0?conditions=worker"
-    }
+    "@emotion/cache": "https://esm.sh/v128/@emotion/cache@11.10.5/dist/emotion-cache.esm.js?external=@emotion/utils",
+    "@emotion/react": "https://esm.sh/v128/@emotion/react@11.10.5/dist/emotion-react.esm.js?alias=react:preact/compat&external=preact,@emotion/cache,@emotion/use-insertion-effect-with-fallbacks,@emotion/utils",
+    "@emotion/styled": "https://esm.sh/v128/@emotion/styled@11.10.5/dist/emotion-styled.esm.js?alias=react:preact/compat&external=preact,@emotion/react,@emotion/use-insertion-effect-with-fallbacks,@emotion/utils",
+    "@emotion/use-insertion-effect-with-fallbacks": "https://esm.sh/v128/@emotion/use-insertion-effect-with-fallbacks@1.0.0/dist/emotion-use-insertion-effect-with-fallbacks.esm.js?alias=react:preact/compat&external=preact",
+    "@emotion/utils": "https://esm.sh/v128/@emotion/utils@1.2.0/dist/emotion-utils.esm.js",
+    "@mui/icons-material": "https://esm.sh/v128/@mui/icons-material@5.11.0?alias=react:preact/compat,@types/react:preact/compat,react-dom:preact/compat&external=preact,@emotion/cache,@emotion/react,@emotion/styled",
+    "@mui/material": "https://esm.sh/v128/@mui/material@5.11.7?alias=react:preact/compat,@types/react:preact/compat,react-dom:preact/compat&external=preact,@emotion/cache,@emotion/react,@emotion/styled",
+    "@mui/x-data-grid": "https://esm.sh/v128/@mui/x-data-grid@5.17.22?alias=react:preact/compat,@types/react:preact/compat,react-dom:preact/compat&external=preact,@emotion/cache,@emotion/react,@emotion/styled"
   }
 }
